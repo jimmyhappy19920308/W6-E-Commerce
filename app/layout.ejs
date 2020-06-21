@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title><%- title %></title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body>
+  <section class="container-fluid container-md position-sticky" style="top: 0; z-index: 1;">
+    <section class="row no-gutters">
+      <section class="col">
+        <nav class="navbar navbar-expand-lg justify-content-between align-items-center py-3 px-0">
+          <a class="navbar-toggler p-0 border-0 d-md-none" data-toggle="offcanvas">
+            <i class="material-icons text-white align-middle">menu</i>
+          </a>
+          <h4 class="h4 logo mb-0"><a href="index.html" class="text-md-secondary text-white align-self-center font-italic">Craftsman</a></h4>
+          <a href="#" class="d-md-none"><i class="material-icons text-white align-middle">shopping_cart</i></a>
+          <ul class="menu list-unstyled d-none d-md-flex mb-0 align-items-center">
+            <li><a href="#" class="text-white">Product</a></li>
+            <li class="ml-5"><a href="#" class="text-white">Blog</a></li>
+            <li class="ml-5"><a href="#" class="text-white">Contact</a></li>
+            <li class="ml-5"><a href="#"><i class="material-icons text-white align-middle">shopping_cart</i></a></li>
+          </ul>
+          <section class="offcanvas-collapse d-md-none">
+            <ul class="navbar-nav d-none mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Switch account</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Settings</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </section>
+    </section>
+  </section>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+  <%- contents %>
 
-    <%- contents %>
+  <footer class="footer">
+    footer
+  </footer>
 
-    <footer class="footer">
-      footer
-    </footer>
-
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
 
 </html>

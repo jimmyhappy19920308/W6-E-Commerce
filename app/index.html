@@ -1,33 +1,70 @@
 ---
-title: Boostrap Index
+title: Index
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<div class="container">
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
+<header class="header container-fluid">
+  <div class="row">
+    <div class="col-md-6 d-none d-md-block"></div>
+    <div class="col-md-6 headerBg"></div>
   </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
+  <section class="headerContent container-md position-absolute" style="top: 0; left: 0; right: 0;">
+    <div class="row">
+      <div class="col-md-5">
+        <h2 class="display-5 text-white text-md-secondary text-center text-md-left headerSlogan mb-4">Enjoy Your<br><span class="text-lg-nowrap">Minimalist Lifestyle.</span></h2>
+        <p class="text-light text-md-dark text-center text-md-left mb-5 pb-md-0" style="padding-bottom: 0.75rem;"><span class="text-md-nowrap">The best crafts in Taiwan. Get your free</span><br>shipping on the first order.</p>
+        <a href="#" class="btn btn-primary mt-5 mb-4 py-3 w-100 font-weight-bold d-md-none">Shop now</a>
+        <a href="#" class="btn btn-primary font-weight-bold py-3 d-none d-md-inline-block" style="padding-left: 41.5px; padding-right: 41.5px;">Shop now</a>
+      </div>
+      <div class="col-md-6 offset-md-1"></div>
+    </div>
+  </section>
+</header>
+<main class="indexMain">
+  <section class="feature container">
+    <div class="row py-5">
+      <div class="col-md-6">
+        <img src="./assets/images/index-2.jpg" class="card-img-top mb-3" alt="...">
+      </div>
+      <div class="col-md-6 mb-4">
+        <h4 class="h4 font-weight-bold mb-3">Special Clays</h4>
+        <p class="text-dark mb-4">A general body formulation for contemporary earthenware is 25% kaolin, 25% ball clay, 35% quartz and 15% feldspar.</p>
+        <a href="#" class="text-primary font-weight-bold">Learn more</a>
+      </div>
+    </div>
+    <div class="row flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="./assets/images/index-3.jpg" class="card-img-top mb-3" alt="...">
+      </div>
+      <div class="col-md-6 mb-4">
+        <h4 class="h4 font-weight-bold mb-3">Less is more</h4>
+        <p class="text-dark mb-4">Trimming pottery can transform a weighty Earth-bound pot into one that is a pleasure to hold, look at, and use.</p>
+        <a href="#" class="text-primary font-weight-bold">Learn more</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="./assets/images/index-4.jpg" class="card-img-top mb-3" alt="...">
+      </div>
+      <div class="col-md-6">
+        <h4 class="h4 font-weight-bold mb-3">Marvelous Detail</h4>
+        <p class="text-dark mb-4">In Craftsman, the art director, working with marketers, develops or creates an idea of a new creation.</p>
+        <a href="#" class="text-primary font-weight-bold">Learn more</a>
+      </div>
+    </div>
+  </section>
+  <section class="artisan container-fluid">
+    <div class="row artisanBg pt-4 pb-4">
+      <div class="col-md-4 d-flex flex-column flex-md-row">
+        <h2 class="artisanBelief h2 text-white">“I want to make the life more simple by crafts.”</h2>
+        <div class="artisanInfo"></div>
+      </div>
+      <div class="col-md-3 offset-md-5">
+        <p class="text-light mb-1">Art Director</p>
+        <h4 class="h4 text-white mb-3">Hsiao-Ming Chen</h4>
+        <a href="#" class="text-primary mr-4" style="font-size: 0.875rem;">Instagram</a><a href="#" class="text-primary" style="font-size: 0.875rem;">Twitter</a>
+      </div>
+    </div>
+  </section>

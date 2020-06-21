@@ -6,15 +6,15 @@
 // Color system
 
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
+$gray-100: rgba(255, 255, 255, 0.6) !default;// #f8f9fa !default;
+$gray-200: rgba(255, 255, 255, 0.87) !default;// #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-800: rgba(0, 0, 0, 0.6) !default;// #343a40 !default;
+$gray-900: #121212 !default;// #212529 !default;
 $black:    #000 !default;
 
 $grays: () !default;
@@ -67,12 +67,13 @@ $colors: map-merge(
 );
 
 $primary:       $green !default;// $blue !default;
-$secondary:     $gray-600 !default;
+$secondary:     $gray-900 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
+$light2:        $gray-200 !default;
 $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
@@ -176,10 +177,10 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                              theme-color("primary") !default;
+$link-color:                              $secondary !default;// theme-color("primary") !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
-$link-hover-decoration:                   underline !default;
+$link-hover-decoration:                   none !default;// underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
 
@@ -278,7 +279,7 @@ $embed-responsive-aspect-ratios: join(
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Raleway , "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
@@ -313,11 +314,13 @@ $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
 $display3-size:               4.5rem !default;
 $display4-size:               3.5rem !default;
+$display5-size:               3rem !default;
 
 $display1-weight:             300 !default;
 $display2-weight:             300 !default;
 $display3-weight:             300 !default;
 $display4-weight:             300 !default;
+$display5-weight:             700 !default;
 $display-line-height:         $headings-line-height !default;
 
 $lead-font-size:              $font-size-base * 1.25 !default;

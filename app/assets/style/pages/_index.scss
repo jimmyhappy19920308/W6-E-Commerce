@@ -1,0 +1,45 @@
+.header{
+  position: absolute;
+  top: 0;
+  &Bg{
+    height: 621px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)),
+    url(../images/index-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include iPad(){
+      height: 764px;
+      background-image: url(../images/index-1.jpg);
+    }
+  }
+  &Content{
+    padding-top: 188px;
+    @include iPad(){
+      padding-top: 236px;
+      padding-bottom: 236px;
+    }
+  }
+}
+
+.feature{
+  outline: 1px solid #ff0000;
+  margin-top: 559px;
+  @include iPad(){
+    margin-top: 702px;
+  }
+}
+
+.artisan{
+  &Bg{
+    background-image: url(../images/index-5.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+  &Belief{
+    padding-bottom: 125px;
+  }
+  &Info{
+
+  }
+}

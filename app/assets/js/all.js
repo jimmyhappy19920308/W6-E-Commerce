@@ -1,3 +1,6 @@
 $(document).ready(() => {
-  console.log('Hello Bootstrap4');
+  $('[data-toggle="offcanvas"]').on('click', function (e) {
+    e.preventDefault();
+    $('.offcanvas-collapse').toggleClass('open')
+  });
 });

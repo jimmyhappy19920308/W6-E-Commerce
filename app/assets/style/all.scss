@@ -1,3 +1,11 @@
 @import "functions";
 @import "./helpers/variables";
 @import "bootstrap";
+
+@import "./base";
+
+@import "./helpers/mixin";
+
+@import "./layout/navbar";
+
+@import "./pages/index";
