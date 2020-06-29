@@ -12,7 +12,7 @@ $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
-$gray-700: #495057 !default;
+$gray-700: rgba(0, 0, 0, 0.38) !default;// #495057 !default;
 $gray-800: rgba(0, 0, 0, 0.6) !default;// #343a40 !default;
 $gray-900: #121212 !default;// #212529 !default;
 $black:    #000 !default;
@@ -75,6 +75,7 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $light2:        $gray-200 !default;
 $dark:          $gray-800 !default;
+$dark2:         $gray-700 !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -87,7 +88,9 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "light2":     $light2,
+    "dark":       $dark,
+    "dark2":      $dark2
   ),
   $theme-colors
 );

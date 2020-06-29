@@ -9,6 +9,7 @@
 <link
   href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
   rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -61,7 +62,38 @@
   <%- contents %>
 
   <footer class="footer">
-    footer
+    <section class="subscribe py-4">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <h2 class="h2 subscribeTitle text-white mb-md-5 mb-4">Subscribe for news and special offers!</h2>
+            <div class="input-group d-flex flex-nowrap">
+              <input type="text" class="subscribeEmail w-100 border-light border-right-0 rounded-left text-light" placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary subscribeBtn font-weight-bold" type="button" id="button-addon2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footerContent bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex flex-column flex-md-row">
+            <h4 class="h4 mb-5 mb-md-0"><a href="#" class="footerLogo text-white font-italic">Craftsman</a></h4>
+            <section class="footerInfo d-md-flex flex-md-row-reverse justify-content-md-between w-100 pl-md-3">
+              <div class="d-flex flex-column flex-md-row align-items-md-center mb-5 mb-md-0">
+                <a href="#" class="text-light2 mb-3 mb-md-0 mr-md-5">Purchase Policy</a>
+                <a href="#" class="text-light2 mb-3 mb-md-0 mr-md-5">Privacy Policy</a>
+                <a href="#" class="text-light2 align-middle">Terms & Conditions</a>
+              </div>
+              <p class="copyright text-light mb-0 align-self-center">© 2020. All Rights Reserved.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
   </footer>
 
   <script src="./assets/js/vendors.js"></script>
