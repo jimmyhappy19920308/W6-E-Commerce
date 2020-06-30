@@ -5,6 +5,24 @@
   }
 }
 
+.product{
+  &DetailsExpand{
+    transition: all .6s;
+    transform: rotate(0deg);
+    &.active{
+      transform: rotate(180deg);
+    }
+  }
+  &List{
+    display: none;
+    &.expand{
+      border-bottom: 1px solid $dark2;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .offcanvas-collapse {
     position: fixed;

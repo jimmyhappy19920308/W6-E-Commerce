@@ -1,8 +1,20 @@
 $(document).ready(() => {
   $('[data-toggle="offcanvas"]').on('click', function (e) {
     e.preventDefault();
-    $('.offcanvas-collapse').toggleClass('open')
+    $('.offcanvas-collapse').toggleClass('open');
   });
+
+  $('.goBack').on('click', function (e) {
+    e.preventDefault();
+    $('.offcanvas-collapse').removeClass('open');
+  });
+
+  $('.productDetailsExpand').on('click', function (e) {
+    e.preventDefault();
+    $('.productList').slideToggle(500);
+    $('.productList').toggleClass('expand');
+    $(this).toggleClass('active');
+  })
 
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
