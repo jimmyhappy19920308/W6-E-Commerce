@@ -1,0 +1,71 @@
+.product{
+  &Menu{
+    padding-left: 15px;
+    @include iPad(){
+      padding-left: 85px;
+    }
+    &Link{
+      margin-left: 1.5rem;
+      @include iPad(){
+        margin-left: 2.5rem;
+      }
+    }
+  }
+  &List{
+    .card{
+      &-img-top{
+        min-height: 161px;
+        object-fit: cover;
+      }
+      &-title{
+        @include iPad(){
+          font-size: 1.5rem;
+        }
+      }
+      &-text{
+        font-size: 0.875rem;
+        @include iPad(){
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  &Pagination{
+    .page-item:nth-child(1){
+      text-decoration: underline !important;
+      .page-link{
+        &:hover{
+          color: $primary !important;
+        }
+      }
+    }
+    .page-link{
+      &:focus{
+        color: $primary;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// .no-gutter-card-deck.card-columns{
+//   column-gap: .5rem !important;
+// }
+
+.card-columns{
+  column-count: 2;
+  column-gap: .5rem;
+  @include media-breakpoint-only(md){
+    column-count: 3;
+    column-gap: 1.875rem;
+  }
+  @include media-breakpoint-only(lg){
+    column-count: 3;
+    column-gap: 1.875rem;
+  }
+  @include media-breakpoint-only(xl){
+    column-count: 3;
+    column-gap: 1.875rem;
+  }
+}

@@ -9,10 +9,10 @@ $(document).ready(() => {
     $('.offcanvas-collapse').removeClass('open');
   });
 
-  $('.productDetailsExpand').on('click', function (e) {
+  $('.menuItemExpand').on('click', function (e) {
     e.preventDefault();
-    $('.productList').slideToggle(500);
-    $('.productList').toggleClass('expand');
+    $('.menuItemSubList').slideToggle(500);
+    $('.menuItemSubList').toggleClass('expand');
     $(this).toggleClass('active');
   })
 
