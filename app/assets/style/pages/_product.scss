@@ -1,11 +1,17 @@
 .product{
   &Menu{
     padding-left: 15px;
+    .nav-item:nth-child(1){
+      .nav-link{
+        color: $primary;
+      }
+    }
     @include iPad(){
       padding-left: 85px;
     }
     &Link{
       margin-left: 1.5rem;
+      color: $dark;
       @include iPad(){
         margin-left: 2.5rem;
       }
