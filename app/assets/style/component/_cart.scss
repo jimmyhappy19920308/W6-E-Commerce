@@ -1,0 +1,81 @@
+.cart{
+  &Modal{
+    padding-right: 0!important;
+  }
+  &Modal.show{
+    padding-right: 0 !important;
+    display: block !important;
+    @include iPad(){
+      display: flex !important;
+      justify-content: flex-end;
+    }
+  }
+  &ModalDialog{
+    @include iPad(){
+      display: flex !important;
+      justify-content: flex-end;
+      max-width: 540px !important;
+      right: 10% !important;
+    } 
+  }
+  &ModalContent{
+    height: 100vh !important;
+    @include iPad(){
+      width: 540px !important;
+    }
+  }
+  &ModalTitle{
+    font-size: 1.5rem;
+    @include iPad(){
+      font-size: 3rem;
+    }
+  }
+  &ModalClose{
+    @include iPad(){
+      font-size: 3rem;
+    }
+  }
+  &Item{
+    margin-bottom: 8px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &Img{
+      width: 96px;
+      object-fit: cover;
+      @include iPad(){
+        width: 112px;
+      }
+    }
+    &Price{
+      font-size: 0.875rem;
+      @include iPad(){
+        font-size: 1rem;
+      }
+    }
+    &OriginalPrice{
+      font-size: 0.75rem;
+      @include iPad(){
+        font-size: 0.875rem;
+      }
+    }
+    &TotalPrice{
+      font-weight: bold;
+    }
+  }
+  &Subtotal{
+    @include iPad(){
+      margin-left: 112px;
+    }
+  }
+  &Shipping{
+    @include iPad(){
+      margin-left: 112px;
+    }
+  }
+  &Total{
+    @include iPad(){
+      margin-left: 112px;
+    }
+  }
+}
