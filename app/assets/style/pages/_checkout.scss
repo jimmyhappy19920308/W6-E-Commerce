@@ -14,14 +14,16 @@
   }
   &SummaryDetail{
     display: none;
-    @include iPad(){
+    @include PC(){
       margin-top: 3.5rem;
       padding: 2rem !important;
     }
   }
 }
 
-.keyboard_arrow_down{
+.orderSummaryIcon,
+.contactIcon,
+.shippingIcon{
   transform: rotate(0deg);
   transition: all .3s;
   &.active{
@@ -29,11 +31,8 @@
   }
 }
 
-
-.form{
-  &-title{
-    @include iPad(){
-      font-size: 1.25rem;
-    }
-  }
+.contactDetail,
+.shippingDetail{
+  display: none;
 }
+
