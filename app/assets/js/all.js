@@ -14,7 +14,13 @@ $(document).ready(() => {
     $('.menuItemSubList').slideToggle(500);
     $('.menuItemSubList').toggleClass('expand');
     $(this).toggleClass('active');
-  })
+  });
+
+  $('.keyboard_arrow_down').on('click', function(e) {
+    e.preventDefault();
+    $('.orderSummaryDetail').slideToggle(600);
+    $(this).toggleClass('active');
+  });
 
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,

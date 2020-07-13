@@ -1,0 +1,39 @@
+.order{
+  &Item{
+    margin-bottom: 0.5rem;
+    @include iPad(){
+      margin-bottom: 1rem;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &ItemImg{
+    width: 48px;
+    height: 48px;
+  }
+  &SummaryDetail{
+    display: none;
+    @include iPad(){
+      margin-top: 3.5rem;
+      padding: 2rem !important;
+    }
+  }
+}
+
+.keyboard_arrow_down{
+  transform: rotate(0deg);
+  transition: all .3s;
+  &.active{
+    transform: rotate(180deg);
+  }
+}
+
+
+.form{
+  &-title{
+    @include iPad(){
+      font-size: 1.25rem;
+    }
+  }
+}
