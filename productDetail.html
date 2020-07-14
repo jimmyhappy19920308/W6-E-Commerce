@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title><%- title %></title>
+<title>ProductDetail</title>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link
   href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
@@ -25,10 +25,10 @@
               class="text-md-secondary text-decoration-none text-white align-self-center font-italic">Craftsman</a></h4>
           <!-- <a href="#" class="d-md-none" data-toggle="modal" data-target="#exampleModal"><i class="material-icons text-white align-middle">shopping_cart</i></a> -->
           <ul class="menu list-unstyled d-md-flex mb-0 align-items-center">
-            <li class="d-none d-md-block"><a href="product.html" class="text-decoration-none <%- theme %>">Product</a></li>
-            <li class="ml-5 d-none d-md-block"><a href="#" class="text-decoration-none <%- theme %>">Blog</a></li>
-            <li class="ml-5 d-none d-md-block"><a href="#" class="text-decoration-none <%- theme %>">Contact</a></li>
-            <li class="ml-md-5"><a href="#" data-toggle="modal" data-target="#exampleModal" class="<%- theme %>"><i
+            <li class="d-none d-md-block"><a href="product.html" class="text-decoration-none <>">Product</a></li>
+            <li class="ml-5 d-none d-md-block"><a href="#" class="text-decoration-none">Blog</a></li>
+            <li class="ml-5 d-none d-md-block"><a href="#" class="text-decoration-none">Contact</a></li>
+            <li class="ml-md-5"><a href="#" data-toggle="modal" data-target="#exampleModal"><i
                   class="material-icons align-middle">shopping_cart</i></a></li>
           </ul>
           <section class="offcanvas-collapse d-md-none pt-3">
@@ -117,7 +117,127 @@
     </div>
   </div>
 
-  <%- contents %>
+  
+
+<section class="productDetail">
+  <div class="container px-0">
+    <div class="row no-gutters align-items-md-center flex-md-nowrap">
+      <div class="col-12 col-md-8">
+        <img src="./assets/images/img-1.jpg" alt="" class="productDetailImage position-relative">
+        <span class="onSale position-absolute text-white">On Sale</span>
+      </div>
+    <div class="productDetailCount col-12 col-md-5">
+        <div class="card border-0 rounded-0 pt-3 pl-3 mb-4 mb-md-0">
+          <p class="text-dark pl-0 pl-md-3 mb-2">Home / Product / Cup</p>
+          <div class="card-body px-0 pl-md-3 pt-0 pb-3">
+            <h2 class="h2 card-title font-weight-bold mb-3">Tatami Cup</h2>
+            <div class="d-flex flex-md-column justify-content-between mb-3">
+              <div class="d-md-none rounded d-flex align-items-center justify-content-between px-3 bg-dark3"><a href="#"><i class="material-icons align-middle d-md-none">remove</i></a><span class="d-md-none" style="margin-left: 31px; margin-right: 31px;">1</span><a href="#"><i class="material-icons align-middle d-md-none">add</i></a></div>
+              <div class="productDetailPrice">
+                <p class="text-dark2 mb-1 text-right mb-md-0">NT$1,200</p>
+                <h4 class="h4 font-weight-bold text-right mb-0">NT$1,080</h4>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-md-between">
+              <div class="d-none rounded d-md-flex align-items-center justify-content-between px-3 mr-md-2 bg-dark3"><a href="#"><i class="material-icons align-middle d-none d-md-block">remove</i></a><span class="d-none d-md-block" style="margin-left: 31px; margin-right: 31px;">1</span><a href="#"><i class="material-icons align-middle d-none d-md-block">add</i></a></div>
+              <a href="#" class="btn btn-primary d-block py-3 font-weight-bold w-100">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-5 pt-md-5">
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <p class="mb-md-4 pt-3 pt-md-0 productDetailDescription">This beautiful light grey cup comes from Taiwan. Add some minimalist scenes to your lifetime and use this cup for tea, coffee, dessert, or to place small items as a dish tray.</p>
+      </div>
+      <div class="col-12 col-md-3">
+        <p class="text-dark mb-0 productDetailSpec">Made in Taiwan<br>8 x 8 x 6 cm<br>Dishwasher and Microwave-safe</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <h2 class="h2 font-weight-bold mb-3">You might also like…</h2>
+  <!-- Swiper -->
+  <div class="swiper-container pb-md-5 mb-5 mb-md-4">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card border-0">
+          <img src="assets/images/img-4.jpg" class="cardImg" alt="...">
+          <div class="card-body pt-2 pb-0 pl-0">
+            <h4 class="h4 card-title font-weight-bold text-left mb-1">Baifan Bowl</h4>
+            <p class="card-text text-left">NT$1,800<s class="text-dark2 ml-2">NT$1,980</s></p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0">
+          <img src="assets/images/img-8.jpg" class="cardImg" alt="...">
+          <div class="card-body pt-2 pb-0 pl-0">
+            <h4 class="h4 card-title font-weight-bold text-left mb-1">Kabi Mug</h5>
+            <p class="card-text text-left">NT$980</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0">
+          <img src="assets/images/img-6.jpg" class="cardImg" alt="...">
+          <div class="card-body pt-2 pb-0 pl-0">
+            <h4 class="h4 card-title font-weight-bold text-left mb-1">Limdae Cup</h5>
+            <p class="card-text text-left">NT$2,400</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0">
+          <img src="assets/images/img-2.jpg" class="cardImg" alt="...">
+          <div class="card-body pt-2 pb-0 pl-0">
+            <h4 class="h4 card-title font-weight-bold text-left mb-1">Couple Collection</h5>
+            <p class="card-text text-left">NT$2,800</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0">
+          <img src="assets/images/img-5.jpg" class="cardImg" alt="...">
+          <div class="card-body pt-2 pb-0 pl-0">
+            <h4 class="h4 card-title font-weight-bold text-left mb-1">Tatami Cup</h5>
+            <p class="card-text text-left">NT$1,200</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0">
+          <img src="assets/images/img-6.jpg" class="cardImg" alt="...">
+          <div class="card-body pt-2 pb-0 pl-0">
+            <h4 class="h4 card-title font-weight-bold text-left mb-1">Tatami Cup</h5>
+            <p class="card-text text-left">NT$1,200</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0">
+          <img src="assets/images/img-7.jpg" class="cardImg" alt="...">
+          <div class="card-body pt-2 pb-0 pl-0">
+            <h4 class="h4 card-title font-weight-bold text-left mb-1">Tatami Cup</h5>
+            <p class="card-text text-left">NT$1,200</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0">
+          <img src="assets/images/img-3.jpg" class="cardImg" alt="...">
+          <div class="card-body pt-2 pb-0 pl-0">
+            <h4 class="h4 card-title font-weight-bold text-left mb-1">Tatami Cup</h5>
+            <p class="card-text text-left">NT$1,200</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <footer class="footer">
     <section class="subscribe py-4">

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Product</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+<link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <section class="container-fluid container-md position-sticky" style="top: 0; z-index: 1;">
+    <section class="row no-gutters">
+      <section class="col">
+        <nav class="navbar navbar-expand-lg justify-content-between align-items-center py-3 px-0">
+          <a class="navbar-toggler p-0 border-0 d-md-none" data-toggle="offcanvas">
+            <i class="material-icons text-white align-middle">menu</i>
+          </a>
+          <h4 class="h4 logo mb-0"><a href="index.html"
+              class="text-md-secondary text-decoration-none text-white align-self-center font-italic">Craftsman</a></h4>
+          <!-- <a href="#" class="d-md-none" data-toggle="modal" data-target="#exampleModal"><i class="material-icons text-white align-middle">shopping_cart</i></a> -->
+          <ul class="menu list-unstyled d-md-flex mb-0 align-items-center">
+            <li class="d-none d-md-block"><a href="product.html" class="text-decoration-none <>">Product</a></li>
+            <li class="ml-5 d-none d-md-block"><a href="#" class="text-decoration-none">Blog</a></li>
+            <li class="ml-5 d-none d-md-block"><a href="#" class="text-decoration-none">Contact</a></li>
+            <li class="ml-md-5"><a href="#" data-toggle="modal" data-target="#exampleModal"><i
+                  class="material-icons align-middle">shopping_cart</i></a></li>
+          </ul>
+          <section class="offcanvas-collapse d-md-none pt-3">
+            <header class="d-flex justify-content-between pb-3">
+              <a href="#" class="goBack"><i class="material-icons font-weight-bold">keyboard_backspace</i></a>
+              <a href="#" data-toggle="modal" data-target="#exampleModal"><i
+                  class="material-icons">shopping_cart</i></a>
+            </header>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link py-3 mb-3 border-bottom border-dark2 h4 d-flex justify-content-between productLink"
+                  href="product.html">Product<i
+                    class="material-icons align-middle font-weight-bold menuItemExpand">keyboard_arrow_up</i></a>
+                <ul class="list-unstyled pb-3 menuItemSubList">
+                  <li class="mb-3"><a href="#" class="text-dark">ALL<sup>24</sup></a></li>
+                  <li class="mb-3"><a href="#" class="text-dark">BOWL<sup>10</sup></a></li>
+                  <li class="mb-3"><a href="#" class="text-dark">CUP<sup>8</sup></a></li>
+                  <li class="mb-3"><a href="#" class="text-dark">PLATE<sup>3</sup></a></li>
+                  <li><a href="#" class="text-dark">VASE<sup>3</sup></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h4 pt-0 pb-3 border-bottom border-dark2 mb-3" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h4 pt-0 pb-3 border-bottom border-dark2" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </section>
+    </section>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal cartModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog cartModalDialog mx-0 my-0">
+      <div class="modal-content cartModalContent rounded-0">
+        <div class="modal-header border-bottom-0 px-md-5">
+          <h4 class="modal-title cartModalTitle font-weight-bold" id="exampleModalLabel">Cart List<sup class="text-primary">3</sup></h4>
+          <a href="#" data-dismiss="modal" aria-label="Close" class="">
+            <i class="material-icons text-black cartModalClose">close</i>
+          </a>
+        </div>
+        <div class="modal-body py-0 px-md-5">
+          <ul class="cartList list-unstyled mb-4">
+            <li class="cartItem d-flex">
+              <img src="assets/images/img-1.jpg" alt="" class="cartItemImg">
+              <div class="cartItemInfo w-100 bg-dark3 px-2 py-2">
+                <div class="cartItemInfoDetail1">
+                  <p class="cartItemName d-flex justify-content-between mb-1 font-weight-bold">Tatami Cup<a href="#" class="align-middle"><i aria-hidden="true" class="material-icons text-black">close</i></a></p>
+                  <p class="cartItemPrice text-dark">NT$1,080<s class="cartItemOriginalPrice text-dark2 ml-2">NT$1,200</s></p>
+                </div>
+                <div class="cartItemInfoDetail2 d-flex justify-content-between">
+                  <span class="cartItemCount align-middle"><a href="#" class="mr-3 mr-md-4 align-middle"><i class="material-icons align-middle">remove</i></a>1<a href="#" class="ml-3 ml-md-4 align-middle"><i class="material-icons align-middle">add</i></a></span>
+                  <span class="cartItemTotalPrice align-middle">NT$1,080</span>
+                </div>
+              </div>
+            </li>
+            <li class="cartItem d-flex">
+              <img src="assets/images/img-4.jpg" alt="" class="cartItemImg">
+              <div class="cartItemInfo w-100 bg-dark3 px-2 py-2">
+                <div class="cartItemInfoDetail1">
+                  <p class="cartItemName d-flex justify-content-between mb-1 font-weight-bold">Baifan Bowl<a href="#" class="align-middle"><i aria-hidden="true" class="material-icons text-black">close</i></a></p>
+                  <p class="cartItemPrice text-dark">NT$1,800</p>
+                </div>
+                <div class="cartItemInfoDetail2 d-flex justify-content-between">
+                  <span class="cartItemCount align-middle"><a href="#" class="mr-3 mr-md-4 align-middle"><i class="material-icons align-middle">remove</i></a>2<a href="#" class="ml-3 ml-md-4 align-middle"><i class="material-icons align-middle">add</i></a></span>
+                  <span class="cartItemTotalPrice align-middle">NT$3,600</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <p class="cartSubtotal d-flex justify-content-between text-dark"><span>Subtotal</span><span>NT$4,680</span></p>
+          <p class="cartShipping d-flex justify-content-between mb-4 text-dark"><span>Shipping</span><span>NT$80</span></p>
+          <h4 class="h4 cartTotal d-flex justify-content-between font-weight-bold mb-md-4"><span>Total</span><span>NT$4,760</span></h4>
+          <div class="d-flex flex-column align-items-stretch d-none" style="margin-left: 112px;">
+            <a href="checkout1.html" class="btn btn-primary py-md-3 d-none d-md-block font-weight-bold">Checkout</a>
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex flex-column align-items-stretch d-md-none">
+          <a href="checkout1.html" class="btn btn-primary py-3 font-weight-bold">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+<ul class="nav productMenu bg-dark3 py-3 py-md-4">
+  <li class="nav-item">
+    <a class="nav-link active font-weight-bold px-0 py-0" href="#">ALL<sup>24</sup></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link productMenuLink px-0 py-0" href="#">BOWL<sup>10</sup></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link productMenuLink px-0 py-0" href="#">CUP<sup>8</sup></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link productMenuLink px-0 py-0" href="#">PLATE<sup>3</sup></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link productMenuLink px-0 py-0" href="#">VASE<sup>3</sup></a>
+  </li>
+</ul>
+
+<section class="product container">
+  <section class="productList py-5 pb-md-0">
+    <div class="row">
+      <div class="col">
+        <div class="card-columns d-md-none">
+          <div class="card border-0 mb-4">
+            <a href="productDetail.html">
+              <img src="assets/images/img-1.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body pl-0 pt-2 pb-0">
+              <h5 class="h5 card-title font-weight-bold mb-1">Tatami Cup</h5>
+              <p class="card-text">NT$1,080<s class="text-dark2 ml-2">NT$1,200</s></p>
+            </div>
+          </div>
+          <div class="card border-0 mb-4">
+            <a href="productDetail.html">
+              <img src="assets/images/img-4.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body pl-0 pt-2 pb-0">
+              <h5 class="h5 card-title font-weight-bold mb-1">Baifan Bowl</h5>
+              <p class="card-text">NT$1,800<s class="text-dark2 ml-2">NT$1,980</s></p>
+            </div>
+          </div>
+          <div class="card border-0 mb-4">
+            <a href="productDetail.html">
+              <img src="assets/images/img-3.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body pl-0 pt-2 pb-0">
+              <h5 class="h5 card-title font-weight-bold mb-1">Sumo Vase</h5>
+              <p class="card-text">NT$4,800</p>
+            </div>
+          </div>
+          <div class="card border-0 mb-0">
+            <a href="productDetail.html">
+              <img src="assets/images/img-8.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body pl-0 pt-2 pb-0">
+              <h5 class="h5 card-title font-weight-bold mb-1">Kabi Mug</h5>
+              <p class="card-text">NT$980</p>
+            </div>
+          </div>
+          <div class="card border-0 mb-4">
+            <a href="productDetail.html">
+              <img src="assets/images/img-5.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body pl-0 pt-2 pb-0">
+              <h5 class="h5 card-title font-weight-bold mb-1">Hana Vase</h5>
+              <p class="card-text">NT$3,600<s class="text-dark2 ml-2">NT$3,880</s></p>
+            </div>
+          </div>
+          <div class="card border-0 mb-4">
+            <a href="productDetail.html">
+              <img src="assets/images/img-6.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body pl-0 pt-2 pb-0">
+              <h5 class="h5 card-title font-weight-bold mb-1">Limdae Cup</h5>
+              <p class="card-text">NT$2,400</p>
+            </div>
+          </div>
+          <div class="card border-0 mb-4">
+            <a href="productDetail.html">
+              <img src="assets/images/img-7.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body pl-0 pt-2 pb-0">
+              <h5 class="h5 card-title font-weight-bold mb-1">Ceramic Vase</h5>
+              <p class="card-text">NT$3,600</p>
+            </div>
+          </div>
+          <div class="card border-0 mb-0">
+            <a href="productDetail.html">
+              <img src="assets/images/img-9.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body pl-0 pt-2 pb-0">
+              <h5 class="h5 card-title font-weight-bold mb-1">Shiro Plate</h5>
+              <p class="card-text">NT$1,200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-columns d-none d-md-block">
+      <div class="card border-0 mb-5">
+        <a href="productDetail.html">
+          <img src="assets/images/img-1.jpg" class="card-img-top" alt="..." style="height: 350px;">
+        </a>
+        <div class="card-body pl-0 pt-2 pb-0">
+          <h4 class="h4 font-weight-bold card-title mb-1">Tatami Cup</h4>
+          <p class="card-text">NT$1,080<s class="text-dark2 ml-2">NT$1,200</s></p>
+        </div>
+      </div>
+      <div class="card border-0 mb-5">
+        <a href="productDetail.html">
+          <img src="assets/images/img-6.jpg" class="card-img-top" alt="..." style="height: 240px;">
+        </a>
+        <div class="card-body pl-0 pt-2 pb-0">
+          <h4 class="h4 font-weight-bold card-title mb-1">Limdae Cup</h4>
+          <p class="card-text">NT$2,400</p>
+        </div>
+      </div>
+      <div class="card border-0 mb-5">
+        <a href="productDetail.html">
+          <img src="assets/images/img-8.jpg" class="card-img-top" alt="..." style="height: 480px;">
+        </a>
+        <div class="card-body pl-0 pt-2 pb-0">
+          <h4 class="h4 font-weight-bold card-title mb-1">Kabi Mug</h4>
+          <p class="card-text">NT$980</p>
+        </div>
+      </div>
+      <div class="card border-0 mb-5">
+        <a href="productDetail.html">
+          <img src="assets/images/img-5.jpg" class="card-img-top" alt="..." style="height: 480px;">
+        </a>
+        <div class="card-body pl-0 pt-2 pb-0">
+          <h4 class="h4 font-weight-bold card-title mb-1">Hana Vase</h4>
+          <p class="card-text">NT$3,600<s class="text-dark2 ml-2">NT$3,880</s></p>
+        </div>
+      </div>
+      <div class="card border-0 mb-5">
+        <a href="productDetail.html">
+          <img src="assets/images/img-3.jpg" class="card-img-top" alt="..." style="height: 350px;">
+        </a>
+        <div class="card-body pl-0 pt-2 pb-0">
+          <h4 class="h4 font-weight-bold card-title mb-1">Sumo Vase</h4>
+          <p class="card-text">NT$4,800</p>
+        </div>
+      </div>
+      <div class="card border-0 mb-5">
+        <a href="productDetail.html">
+          <img src="assets/images/img-9.jpg" class="card-img-top" alt="..." style="height: 240px;">
+        </a>
+        <div class="card-body pl-0 pt-2 pb-0">
+          <h4 class="h4 font-weight-bold card-title mb-1">Shiro Plate</h4>
+          <p class="card-text">NT$1,200</p>
+        </div>
+      </div>
+      <div class="card border-0 mb-5">
+        <a href="productDetail.html">
+          <img src="assets/images/img-4.jpg" class="card-img-top" alt="..." style="height: 240px;">
+        </a>
+        <div class="card-body pl-0 pt-2 pb-0">
+          <h4 class="h4 font-weight-bold card-title mb-1">Baifan Bowl</h4>
+          <p class="card-text">NT$1,800<s class="text-dark2 ml-2">NT$1,980</s></p>
+        </div>
+      </div>
+      <div class="card border-0 mb-5">
+        <a href="productDetail.html">
+          <img src="assets/images/img-7.jpg" class="card-img-top" alt="..." style="height: 480px;">
+        </a>
+        <div class="card-body pl-0 pt-2 pb-0">
+          <h4 class="h4 font-weight-bold card-title mb-1">Ceramic Vase</h4>
+          <p class="card-text">NT$3,600</p>
+        </div>
+      </div>
+      <div class="card border-0 mb-5">
+        <a href="productDetail.html">
+          <img src="assets/images/img-2.jpg" class="card-img-top" alt="..." style="height: 350px;">
+        </a>
+        <div class="card-body pl-0 pt-2 pb-0">
+          <h4 class="h4 font-weight-bold card-title mb-1">Couple Collection</h4>
+          <p class="card-text">NT$2,800</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav aria-label="...">
+    <ul class="pagination pagination-lg productPagination d-flex justify-content-center mb-5">
+      <li class="page-item active" aria-current="page"><a
+          class="page-link bg-white text-primary font-weight-bold border-0 py-0 px-3" href="#">1</a></li>
+      <li class="page-item"><a class="page-link h4  border-0 py-0 px-3 mb-0" href="#">2</a></li>
+      <li class="page-item"><a class="page-link h4 border-0 py-0 px-3 mb-0" href="#">3</a></li>
+    </ul>
+  </nav>
+</section>
+
+  <footer class="footer">
+    <section class="subscribe py-4">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <h2 class="h2 subscribeTitle text-white mb-md-5 mb-4">Subscribe for news and special offers!</h2>
+            <div class="input-group d-flex flex-nowrap">
+              <input type="text" class="subscribeEmail w-100 border-light border-right-0 rounded-left text-light"
+                placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary subscribeBtn font-weight-bold" type="button"
+                  id="button-addon2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footerContent bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex flex-column flex-md-row">
+            <h4 class="h4 mb-5 mb-md-0"><a href="#"
+                class="footerLogo text-white font-italic text-decoration-none">Craftsman</a></h4>
+            <section class="footerInfo d-md-flex flex-md-row-reverse justify-content-md-between w-100 pl-md-3">
+              <div class="d-flex flex-column flex-md-row align-items-md-center mb-5 mb-md-0">
+                <a href="#" class="text-light2 text-decoration-none mb-3 mb-md-0 mr-md-5">Purchase Policy</a>
+                <a href="#" class="text-light2 text-decoration-none mb-3 mb-md-0 mr-md-5">Privacy Policy</a>
+                <a href="#" class="text-light2 text-decoration-none align-middle">Terms & Conditions</a>
+              </div>
+              <p class="copyright text-light mb-0 align-self-center">© 2020. All Rights Reserved.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
